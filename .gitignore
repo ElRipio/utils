@@ -1,2 +1,6 @@
-# Coegen
-datos.coe
+# Python
+__pycache__
+# Vscode
+.vscode
+# COEGEN
+Sistemas Digitales/COEGEN/output/datos.coe
