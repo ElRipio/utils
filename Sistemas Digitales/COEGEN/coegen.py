@@ -26,7 +26,7 @@ class CoeGen:
             archivo.write('memory_initialization_vector =\n')
             for i in range(self.tamano):
                 if len(self.datos) > 0:
-                    dato = self.datos.pop()
+                    dato = self.datos.pop(0)
                 else:
                     dato = 0
                 dato_bin = self.dec_a_bin(dato)
