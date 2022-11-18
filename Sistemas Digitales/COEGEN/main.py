@@ -3,11 +3,10 @@ from parametros import TAMANO_COE, BITS_POR_NUMERO
 
 
 if __name__ == '__main__':
+    coegen = CoeGen(TAMANO_COE, BITS_POR_NUMERO)
     print('>> COEGEN v1.0 <<'.center(50, '-'))
     print('>> Creado por: ElRipio <<'.center(50, '-'))
     print('-' * 50)
-    print(' Parametros '.center(50, '-'))
-    coegen = CoeGen(TAMANO_COE, BITS_POR_NUMERO)
     print(' Parametros '.center(50, '-'))
     print(f'Tamaño del vector: {coegen.tamano}')
     print(f'Bits por número del vector: {coegen.ancho} bits')
