@@ -1,5 +1,6 @@
-# TIM (Traductor de Instrucciones de Memoria)
+# TIM v1.0 (Traductor de Instrucciones de Memoria)
 _Para python (versión recomendada: 3.10+)_
+
 ## Descripción
 Este programa permite traducir instrucciones escritas en formato de ```mnemotecnicas``` a formato de ```opcode```. Para ello, se carga un archivo de texto con las instrucciones y es traducido al ejecutar el programa.
 
