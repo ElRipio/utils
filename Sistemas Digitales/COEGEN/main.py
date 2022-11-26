@@ -4,9 +4,9 @@ from parametros import TAMANO_COE, BITS_POR_NUMERO
 
 if __name__ == '__main__':
     coegen = CoeGen(TAMANO_COE, BITS_POR_NUMERO)
-    print('>> COEGEN v1.0 <<'.center(50, '-'))
+    print('>> COEGEN v1.1 <<'.center(50, '-'))
     print('>> Creado por: ElRipio <<'.center(50, '-'))
-    print('-' * 50)
+    print('=' * 50)
     print(' Parametros '.center(50, '-'))
     print(f'Tamaño del vector: {coegen.tamano}')
     print(f'Bits por número del vector: {coegen.ancho} bits')
@@ -24,12 +24,13 @@ if __name__ == '__main__':
         try:
             print('>>>> "CTRL + C" para detener ingreso de datos <<<<')
             print('Maximo numero posible:', coegen.maximo)
-            entrada = input('Ingresa un número (natural): ')
+            print('Minimo numero posible:', coegen.minimo)
+            entrada = input('Ingresa un número (entero): ')
             entero = int(entrada)
             if entero > coegen.maximo:
                 raise Exception('Número supera al máximo.')
-            elif entero < 0:
-                raise Exception('No puedes ingresar negativos.')
+            elif entero < coegen.minimo:
+                raise Exception('Número inferior al mínimo.')
             coegen.datos.append(entero)
             i += 1
             print(f'Numeros ingresados hasta ahora: {i}/{cantidad}')
