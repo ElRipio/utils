@@ -11,6 +11,7 @@ Este programa permite traducir instrucciones escritas en formato de ```mnemotecn
     > - **RUTA_COE**: Ruta de salida del archivo ```.coe```.
     > - **RUTA_PROGRAMA**: Ruta de entrada del archivo ```.txt``` a traducir.
     > - **INSTRUCCIONES**: Instrucciones que procesa el traductor. Contiene los valores predeterminados y permite añadir mnemotecnias.
-3. Escribir el programa en el archivo ```.txt```.
+3. Escribir el programa en el archivo ```.txt``` dentro de la carpeta output.
     > Se ha incluido un ejemplo de un programa dentro de la carpeta ```input```.
 4. Ejecutar ```main.py```.
+5. El archivo generado se encontrará en la carpeta ```output```.
