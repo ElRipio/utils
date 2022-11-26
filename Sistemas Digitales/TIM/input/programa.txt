@@ -1,0 +1,17 @@
+### ARCHIVO DE EJEMPLO ###
+#
+# Las lineas que comienzan con "#" (comentarios) y las lineas en blanco son
+# ignoradas por el programa
+#
+# Instrucciones:
+# 1- NO comentar en una linea de instruccion. Solo comenta en lineas
+#    separadas del codigo
+# 2- El formato de las instrucciones es mnemotecnica. Debes incluir
+#    los argumentos minimos que requiere cada instruccion.
+#
+# FORMATO DE INSTRUCCION:   MNEMOTECNICA ARG1 ARG2 ARG3 ... ARGn
+LD 0 0
+MOVA 1 0
+ADI 1 1 2
+BRN 1 -2
+ST 7 1

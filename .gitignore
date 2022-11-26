@@ -2,5 +2,6 @@
 __pycache__
 # Vscode
 .vscode
+setup.cfg
 # COEGEN
 Sistemas Digitales/COEGEN/output/datos.coe
