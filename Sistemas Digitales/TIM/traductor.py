@@ -1,4 +1,5 @@
-from parametros import INSTRUCCIONES, TAMANO_COE, BITS_POR_NUMERO, RUTA_COE, RUTA_PROGRAMA
+from parametros import INSTRUCCIONES, TAMANO_COE, BITS_POR_NUMERO, RUTA_COE, RUTA_PROGRAMA,\
+    VALOR_DEFAULT
 from utils import minmax
 from os.path import join
 from collections import defaultdict
@@ -37,8 +38,13 @@ class Traductor:
             self.generar_coe()
         except KeyError as error:
             print('ERROR'.center(50, "*"))
-            print(f'Hay un error de escritura en la linea {n_linea}')
+            print(f'Hay un error de escritura en la linea {n_linea}.')
             print(f'Detalle: {error} no se reconoce como mnemotecnia.')
+        except IndexError as error:
+            print('ERROR'.center(50, "*"))
+            print(f'Hay un error de escritura en la linea {n_linea}.')
+            print('Motivo: Cantidad incorrecta de argumentos.')
+            print(f'Detalle: {error}')
 
     def traducir_linea(self, linea: str) -> str:
         '''
@@ -80,7 +86,7 @@ class Traductor:
                 if len(self.instrucciones) > 0:
                     dato_bin = self.instrucciones.pop(0)
                 else:
-                    dato_bin = self.int_a_bin(-512, self.ancho)
+                    dato_bin = VALOR_DEFAULT.rjust(BITS_POR_NUMERO, '1')
                 if i == (self.tamano - 1):
                     archivo.write(f'{dato_bin};')
                 else:
