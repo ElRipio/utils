@@ -5,3 +5,5 @@ __pycache__
 setup.cfg
 # COEGEN
 Sistemas Digitales/COEGEN/output/datos.coe
+# Releases
+releases_zips
